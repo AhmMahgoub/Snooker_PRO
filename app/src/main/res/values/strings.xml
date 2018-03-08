@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Snooker</string>
+    <string name="red">Red \n+1</string>
+    <string name="yellow">Yellow \n+2</string>
+    <string name="green">Green \n+3</string>
+    <string name="brown">Brown \n+4</string>
+    <string name="blue">Blue \n+5</string>
+    <string name="pink">Pink \n+6</string>
+    <string name="black">Black \n+7</string>
+</resources>

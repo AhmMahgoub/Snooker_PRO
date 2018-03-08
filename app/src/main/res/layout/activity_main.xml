@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/billiard"
+    android:fillViewport="true"
+    tools:context="com.example.android.snooker.MainActivity">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="50dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Style buttons of player x -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Player_Names"
+                android:text="Player X" />
+
+            <TextView
+                android:id="@+id/playerX"
+                style="@style/Score" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/RedBall"
+                    style="@style/Ball_buttons_Left"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="onePointx"
+                    android:text = "@string/red"
+
+                    />
+                <!-- This is a comment -->
+
+                <Button
+                    android:id="@+id/YellowBall"
+                    style="@style/Ball_buttons_Right"
+                    android:layout_toRightOf="@id/RedBall"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="twoPointsx"
+                    android:text = "@string/yellow" />
+
+                <Button
+                    android:id="@+id/GreenBall"
+                    style="@style/Ball_buttons_Left"
+                    android:layout_below="@id/RedBall"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="threePointsx"
+                    android:text = "@string/green" />
+
+                <Button
+                    android:id="@+id/BrownBall"
+                    style="@style/Ball_buttons_Right"
+                    android:layout_below="@id/YellowBall"
+                    android:layout_toRightOf="@id/GreenBall"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="fourPointsx"
+                    android:text = "@string/brown" />
+
+                <Button
+                    android:id="@+id/BlueBall"
+                    style="@style/Ball_buttons_Left"
+                    android:layout_below="@id/GreenBall"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="fivePointsx"
+                    android:text = "@string/blue" />
+
+                <Button
+                    android:id="@+id/PinkBall"
+                    style="@style/Ball_buttons_Right"
+                    android:layout_below="@id/BrownBall"
+                    android:layout_toRightOf="@id/BlueBall"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="sixPointsx"
+                    android:text = "@string/pink" />
+
+            </RelativeLayout>
+
+            <!-- Black button -->
+
+            <Button
+                android:id="@+id/blackBall"
+                style="@style/Ball_Buttons_Center"
+                android:background="@drawable/roundedbutton"
+                android:onClick="sevenPointsx"
+                android:text = "@string/black" />
+
+        </LinearLayout>
+        <!-- style buttons of player y -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Player_Names"
+                android:text="Player Y" />
+
+            <TextView
+                android:id="@+id/playerY"
+                style="@style/Score" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/RedBallx"
+                    style="@style/Ball_buttons_Left"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="onePointy"
+                    android:text = "@string/red" />
+
+                <Button
+                    android:id="@+id/YellowBallx"
+                    style="@style/Ball_buttons_Right"
+                    android:layout_toRightOf="@id/RedBallx"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="twoPointsy"
+                    android:text = "@string/yellow" />
+
+                <Button
+                    android:id="@+id/GreenBallx"
+                    style="@style/Ball_buttons_Left"
+                    android:layout_below="@id/RedBallx"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="threePointsy"
+                    android:text = "@string/green" />
+
+                <Button
+                    android:id="@+id/BrownBallx"
+                    style="@style/Ball_buttons_Right"
+                    android:layout_below="@id/YellowBallx"
+                    android:layout_toRightOf="@id/GreenBallx"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="fourPointsy"
+                    android:text = "@string/brown" />
+
+                <Button
+                    android:id="@+id/BlueBallx"
+                    style="@style/Ball_buttons_Left"
+                    android:layout_below="@id/GreenBallx"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="fivePointsy"
+                    android:text = "@string/blue" />
+
+                <Button
+                    android:id="@+id/PinkBallx"
+                    style="@style/Ball_buttons_Right"
+                    android:layout_below="@id/BrownBallx"
+                    android:layout_toRightOf="@id/BlueBallx"
+                    android:background="@drawable/roundedbutton"
+                    android:onClick="sixPointsy"
+                    android:text = "@string/pink" />
+            </RelativeLayout>
+
+            <!-- Black button -->
+
+            <Button
+                android:id="@+id/blackBallx"
+                style="@style/Ball_Buttons_Center"
+                android:background="@drawable/roundedbutton"
+                android:onClick="sevenPointsy"
+                android:text = "@string/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Reset button -->
+
+    <Button
+        style="@style/Reset_Button"
+        android:background="@drawable/rectangularrounded"
+        android:onClick="Reset"
+        android:text="Reset" />
+
+</RelativeLayout>
+
+   </ScrollView>
