@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <item name="colorPrimary" type="color">#CA0028</item>
+    <item name="colorButtonNormal" type="color">#CA0028</item>
+    <item name="scoreStyle" type="color">#000000</item>
+    <item name="textBackground" type="color">@android:color/holo_red_dark</item>
+    <item name="roundBtnStroke" type="color">#E96C25</item>
+    <item name="roundBtnSolid" type="color">#FFB78F</item>
+    <item name="rectRoundStroke" type="color">#FFA4B4</item>
+    <item name="rectRoundSolidBe" type="color">#CA0028</item>
+    <item name="rectRoundSolidAf" type="color">#9B001E</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/textBackground</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorButtonNormal</item>
+        <item>@color/roundBtnStroke</item>
+        <item>@color/roundBtnSolid</item>
+        <item>@color/rectRoundStroke</item>
+        <item>@color/rectRoundSolidBe</item>
+        <item>@color/rectRoundSolidAf</item>
+        <item>@color/scoreStyle</item>
+    </integer-array>
 </resources>

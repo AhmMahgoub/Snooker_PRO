@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#CA0028</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#FF9800</item>
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
     </style>
     <!-- The Left Side Buttons Styles -->
     <style name="Ball_buttons_Left" parent="Theme.AppCompat.Light.DarkActionBar" >
@@ -34,9 +34,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:padding">30dp</item>
-        <item name="android:textColor">#CA0028</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/colorButtonNormal</item>
         <item name="android:layout_gravity">center</item>
     </style>
     <!--Score Styles -->
@@ -46,7 +46,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">70sp</item>
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textColor">#000000</item>
+        <item name="android:textColor">@color/scoreStyle</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:text">0</item>
         <item name="android:paddingBottom">50dp</item>
